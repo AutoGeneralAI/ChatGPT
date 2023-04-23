@@ -13,7 +13,7 @@ jobs:
       - uses: nateraw/huggingface-sync-action@v0.0.5
         with:
           # The github repo you are syncing from. Required.
-          github_repo_id: 'ChatGPT'
+          github_repo_id: 'AutoGeneralAI/ChatGPT'
 
           # The Hugging Face repo id you want to sync to. (ex. 'username/reponame')
           # A repo with this name will be created if it doesn't exist. Required.
