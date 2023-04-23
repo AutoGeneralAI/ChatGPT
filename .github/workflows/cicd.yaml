@@ -21,7 +21,7 @@ jobs:
 
           # Hugging Face token with write access. Required.
           # Here, we provide a token that we called `HF_TOKEN` when we added the secret to our GitHub repo.
-          hf_token: ${{ HF_TOKEN }}
+          hf_token: ${{ secrets.HF_TOKEN }}
 
           # The type of repo you are syncing to: model, dataset, or space.
           # Defaults to space.
