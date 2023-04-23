@@ -3,6 +3,7 @@ import gradio as gr
 
 openai.api_key = "sk-" # Replace this with your API key: https://beta.openai.com/docs/quickstart/add-your-api-key
 
+# openai
 def openai_chat(prompt):
     completions = openai.Completion.create(
         engine="text-davinci-003",
@@ -15,6 +16,7 @@ def openai_chat(prompt):
     message = completions.choices[0].text
     return message.strip()
 
+# gradio
 def chatbot(key, input, history=[]):
     openai.api_key = key
     output = openai_chat(input)
