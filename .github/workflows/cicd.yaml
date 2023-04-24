@@ -11,7 +11,7 @@ jobs:
       # checkout && nodejs 
       # - uses: actions/checkout@v2
       # - uses: nateraw/huggingface-sync-action@v0.0.5
-      - uses: backendcloud/hugging-push@v0.2.0
+      - uses: backendcloud/hugging-push@v0.2.2
         with:
           # The Hugging Face repo id you want to sync to. (ex. 'username/reponame')
           # A repo with this name will be created if it doesn't exist. Required.
