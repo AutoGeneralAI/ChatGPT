@@ -8,10 +8,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      # checkout && nodejs 
-      # - uses: actions/checkout@v2
-      # - uses: nateraw/huggingface-sync-action@v0.0.5
-      - uses: backendcloud/hugging-push@v0.2.2
+      - uses: backendcloud/hugging-push@v0.2.3
         with:
           # The Hugging Face repo id you want to sync to.
           # A repo with this name will be created if it doesn't exist. Required.
