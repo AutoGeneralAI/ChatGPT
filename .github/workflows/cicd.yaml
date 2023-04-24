@@ -13,9 +13,11 @@ jobs:
       # - uses: nateraw/huggingface-sync-action@v0.0.5
       - uses: backendcloud/hugging-push@v0.2.2
         with:
-          # The Hugging Face repo id you want to sync to. (ex. 'username/reponame')
+          # The Hugging Face repo id you want to sync to.
           # A repo with this name will be created if it doesn't exist. Required.
-          # huggingface_repo: 'AutoGeneralAI/ChatGPT'
+          # The github username is not included. ex: not like this 'username/reponame', but like this: 'reponame'
+          # the key of huggingface_repo can be omitted. If the key is commented out, it defaults to the same name as the Github repository. 
+          # huggingface_repo: 'ChatGPT'
 
           # Hugging Face token with write access. Required.
           # Here, we provide a token that we called `HF_TOKEN` when we added the secret to our GitHub repo.
