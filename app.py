@@ -23,6 +23,13 @@ def chatbot(key, input, history=[]):
     history.append((input, output))
     return history, history
 
+keyTxt = gr.Textbox(
+                        show_label=True,
+                        placeholder=f"Your API-key...",
+                        type="password",
+                        visible=True,
+                        label="API-Key",
+                    )
 gr.Interface(fn = chatbot,
-             inputs = ["text","text",'state'],
+             inputs = [keyTxt,"text",'state'],
              outputs = ["chatbot",'state']).launch(debug = True)
