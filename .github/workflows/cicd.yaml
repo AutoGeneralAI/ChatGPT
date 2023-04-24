@@ -11,7 +11,7 @@ jobs:
       # checkout && nodejs 
       # - uses: actions/checkout@v2
       # - uses: nateraw/huggingface-sync-action@v0.0.5
-      - uses: backendcloud/hugging-push@v0.1.3
+      - uses: backendcloud/hugging-push@v0.1.4
         with:
           # The github repo you are syncing from. Required.
           github_repo_id: 'AutoGeneralAI/ChatGPT'
