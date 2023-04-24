@@ -1,6 +1,6 @@
 # ChatGPT
 
-GUI for ChatGPT API https://huggingface.co/spaces/AutoGeneralAI/ChatGPT
+GUI for ChatGPT API在线体验网址 https://huggingface.co/spaces/AutoGeneralAI/ChatGPT
 
 ## 使用方法
 将自己的OpenAI API KEY https://platform.openai.com/
